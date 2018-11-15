@@ -7,7 +7,7 @@ class MP3Importer
   end
 
   def files
-    Dir["#{path}/**/*.mp3"]
+    Dir["#{path}/**/*.mp3"].collect {|file| file.partition(path)[2]}
   end
 
   def import
