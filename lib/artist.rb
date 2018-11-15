@@ -21,6 +21,7 @@ class Artist
     match = @@all.find {|artist| artist.name == name}
     if match.nil?
       match = Artist.new(name)
+      match.save
     end
     match
   end
