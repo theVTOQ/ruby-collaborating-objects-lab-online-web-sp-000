@@ -16,4 +16,11 @@ class Artist
   def save
     @@all << self
   end
+
+  def find_or_create_by_name(name)
+    match = @@all.find {|artist| artist.name == name}
+    if match.nil?
+      match = Artist.new(name)
+    end
+    match
 end
