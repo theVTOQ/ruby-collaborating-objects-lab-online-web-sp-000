@@ -24,4 +24,7 @@ class Artist
     end
     match
   end
+
+  def print_songs
+    @songs.each {|song| puts song.name}
 end
