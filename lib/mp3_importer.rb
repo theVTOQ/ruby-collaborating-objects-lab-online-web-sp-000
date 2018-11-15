@@ -7,10 +7,12 @@ class MP3Importer
   end
 
   def files
-
+    Dir["#{path}/**/*.mp3"]
   end
 
   def import
 
   end
 end
+
+puts MP3Importer.new("./spec/fixtures/mp3s").files
