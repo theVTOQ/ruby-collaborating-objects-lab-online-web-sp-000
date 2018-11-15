@@ -15,4 +15,4 @@ class MP3Importer
   end
 end
 
-puts MP3Importer.new("./spec/fixtures/mp3s").files
+#puts MP3Importer.new("./spec/fixtures/mp3s").files
