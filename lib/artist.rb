@@ -17,7 +17,7 @@ class Artist
     @@all << self
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     match = @@all.find {|artist| artist.name == name}
     if match.nil?
       match = Artist.new(name)
@@ -29,7 +29,7 @@ class Artist
     @songs.each {|song| puts song.name}
   end
 
-  def self.all 
-    @@all 
+  def self.all
+    @@all
   end
 end
