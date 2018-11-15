@@ -23,4 +23,5 @@ class Artist
       match = Artist.new(name)
     end
     match
+  end
 end
