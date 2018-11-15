@@ -13,6 +13,7 @@ class Song
     song_name = split[1].chomp(".mp3")
     song = Song.new(song_name)
     song.artist = artist
+    song
   end
 
 end
